@@ -23,8 +23,11 @@ rm -rf card.speed4g.xyz.zip
 cd ../../..
 clear
 cd /www/wwwroot/speed4g.xyz
-unzip -u speed4g.xyz.zip
-rm -rf speed4g.xyz.zip
+git clone https://github.com/source235/website.git ./
+unzip -u SPEED4G1.zip
+unzip -u SPEED4G2.zip
+rm -rf SPEED4G1.zip
+rm -rf SPEED4G2.zip
 rm -rf .env
 clear
 composer update
