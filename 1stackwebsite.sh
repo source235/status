@@ -29,3 +29,5 @@ php artisan package:discover --ansi
 composer dump-autoload --ignore-platform-reqs
 composer dump-autoload
 sh init.sh
+sleep 60
+sudo php artisan config:clear
