@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf runweb.x
 clear
 cd /www/wwwroot/momo.speed4g.xyz
 git clone https://github.com/source235/momo.git ./
@@ -24,11 +25,7 @@ rm -rf speed4g.xyz.zip
 rm -rf .env
 clear
 composer update
-clear
 php artisan package:discover --ansi
-clear
 composer dump-autoload --ignore-platform-reqs
-clear
 composer dump-autoload
-clear
 sh init.sh
