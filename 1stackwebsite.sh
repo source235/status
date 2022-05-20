@@ -4,22 +4,22 @@ clear
 cd /www/wwwroot/momo.speed4g.xyz
 rm -rf *
 git clone https://github.com/source235/momo.git ./
-unzip -u momo.zip
-rm -rf momo.zip
+unzip -u momo.speed4g.xyz.zip
+rm -rf momo.speed4g.xyz.zip
 clear
 cd ..
 cd atm.speed4g.xyz
 rm -rf *
 git clone https://github.com/source235/atm.git ./
-unzip -u atm.zip
-rm -rf atm.zip
+unzip -u atm.speed4g.xyz.zip
+rm -rf atm.speed4g.xyz.zip
 clear
 cd ..
 cd card.speed4g.xyz
 rm -rf *
 git clone https://github.com/source235/card.git ./
-unzip -u card.zip
-rm -rf card.zip
+unzip -u card.speed4g.xyz.zip
+rm -rf card.speed4g.xyz.zip
 cd ../../..
 clear
 cd /www/wwwroot/speed4g.xyz
@@ -32,5 +32,4 @@ php artisan package:discover --ansi
 composer dump-autoload --ignore-platform-reqs
 composer dump-autoload
 sh init.sh
-sleep 60
 sudo php artisan config:clear
